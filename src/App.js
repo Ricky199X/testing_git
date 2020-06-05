@@ -1,21 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./components/NoMatch";
+import HomePage from "./containers/HomePage";
 
 function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <div className="App">
-            <h1>This is the App.js file - we are testing Github branches.</h1>
-            <body>I am adding a body here to practice documenting a change.</body>
-            {/* <Route path="/" exact component={ChickenButt} /> */}
+        <div className="App">
+          <h1>This is the App.js file - we are testing Github branches.</h1>
+          <body>I am adding a body here to practice documenting a change.</body>
+          <Switch>
+            <Route path="/" exact component={HomePage} />
             <Route component={NoMatch} />
-          </div>
-        </Switch>
+          </Switch>
+        </div>
       </Router>
     </>
   );

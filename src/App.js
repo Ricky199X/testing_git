@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./components/NoMatch";
 import HomePage from "./containers/HomePage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </div>
+        <Footer />
       </Router>
     </>
   );
